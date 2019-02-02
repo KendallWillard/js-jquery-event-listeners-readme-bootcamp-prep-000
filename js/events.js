@@ -22,7 +22,9 @@ function pressIt() {
 }
 
 function submitIt() {
-  $("form")
+  $("form").on("submit", function() {
+    window.alert("Your form is going to be submitted now.");
+  });
 }
 
 $(document).ready(function(){
@@ -31,5 +33,6 @@ $(document).ready(function(){
 getIt()
 frameIt()
 pressIt()
+submitIt()
 
 });
